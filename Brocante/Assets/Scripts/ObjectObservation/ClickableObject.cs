@@ -32,11 +32,15 @@ public class ClickableObject : MonoBehaviour
     /*Fonction qui gère les différents événements en fonction de où l'on touche l'objet*/
     void ObjectEvent(string objectName){
         switch (objectName){
-            /**/
+            /*Si on clique sur la manivelle : on ouvre la boître et on joue de la musique*/
             case "BoxOpener":
                 Debug.Log("Box Opener Trigger");
                 anim = gameObject.GetComponent<Animator>();
                 anim.SetTrigger("Open");
+                break;
+            /*Si on appuie sur le bouton dans la boite : on joue de la musique*/
+            case "BoxButton":
+                Debug.Log("BoxButton Trigger");
                 if (isActiveAudio) {
                     Debug.Log("Music Play");
                     audioData = gameObject.GetComponent<AudioSource>();
@@ -44,14 +48,13 @@ public class ClickableObject : MonoBehaviour
                     isActiveAudio = false;
                 }
                 break;
-            case "BoxButton":
-                Debug.Log("BoxButton Trigger");
-                break;
+            /*Si on clique sur le cadenas : le livre s'ouvre*/
             case "Cadenas":
                 Debug.Log("Book Open Trigger");
                 anim = gameObject.GetComponent<Animator>();
                 anim.SetTrigger("Open");
                 break;
+            /*default : on ne fait rien*/
             default:
                 Debug.Log("Default switch state");
                 break;
