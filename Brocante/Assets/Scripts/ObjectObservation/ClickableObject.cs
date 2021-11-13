@@ -5,6 +5,8 @@ using UnityEngine;
 public class ClickableObject : MonoBehaviour
 {
     private Animator anim;
+    private AudioSource audioData;
+    private bool isActiveAudio = true;
 
     // Update is called once per frame
     void Update()
@@ -30,13 +32,25 @@ public class ClickableObject : MonoBehaviour
     /*Fonction qui gère les différents événements en fonction de où l'on touche l'objet*/
     void ObjectEvent(string objectName){
         switch (objectName){
+            /**/
             case "BoxOpener":
                 Debug.Log("Box Opener Trigger");
                 anim = gameObject.GetComponent<Animator>();
                 anim.SetTrigger("Open");
+                if (isActiveAudio) {
+                    Debug.Log("Music Play");
+                    audioData = gameObject.GetComponent<AudioSource>();
+                    audioData.Play(0);
+                    isActiveAudio = false;
+                }
                 break;
             case "BoxButton":
                 Debug.Log("BoxButton Trigger");
+                break;
+            case "Cadenas":
+                Debug.Log("Book Open Trigger");
+                anim = gameObject.GetComponent<Animator>();
+                anim.SetTrigger("Open");
                 break;
             default:
                 Debug.Log("Default switch state");
