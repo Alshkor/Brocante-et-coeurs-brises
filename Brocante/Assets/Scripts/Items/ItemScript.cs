@@ -84,4 +84,9 @@ public class ItemScript : MonoBehaviour
     {
         return _price;
     }
+
+    public GameObject GetPrefab()
+    {
+        return _prefab3D;
+    }
 }

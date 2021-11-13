@@ -14,7 +14,7 @@ public class SceneManagement : MonoBehaviour
     {
         if (IsItemSelect.IsItemAlreadySelect())
         {
-            StaticObject.activeObject = IsItemSelect.GetItemSelect();
+            StaticObject.activeObject = IsItemSelect.GetItemSelect().GetComponent<ItemScript>().GetPrefab();
             InventoryToExamine();
         }
     }

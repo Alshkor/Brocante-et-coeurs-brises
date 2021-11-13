@@ -14,7 +14,7 @@ public class CreateDialogues : MonoBehaviour
 
     [SerializeField] private GameObject _button;
 
-    private List<Dialogues> _dialogues;
+    private List<DialoguesPNJ> _dialogues;
 
     // Start is called before the first frame update
     void Start()
@@ -64,13 +64,11 @@ public class CreateDialogues : MonoBehaviour
 
         //Liste des dialogues qui convient à la personne devant nous. Doit être update quand l'on passe à une autre personne ou que
         //l'on fait des actions sur les objets
-        _dialogues = new List<Dialogues>();
         ListDialogues _listDialogues = new ListDialogues();
 
         string jsonFiles = File.ReadAllText(Application.dataPath + "/Resources/testDialogues.json");
 
-        Dialogues dial = new Dialogues();
-        object boxDial = dial;
+
         Debug.Log("json : " + jsonFiles);
         //EditorJsonUtility.FromJsonOverwrite(jsonFiles, boxDial);
         _listDialogues = JsonUtility.FromJson<ListDialogues>(jsonFiles);
@@ -79,7 +77,8 @@ public class CreateDialogues : MonoBehaviour
         {
             Debug.Log("un truc " + truc.sentence);
         }
-        
+
+
         //Debug.Log("List des dialogujes " + _listDialogues.listDialogues.Count);
         
         //dial = _listDialogues.listDialogues[0];
@@ -99,11 +98,25 @@ public class CreateDialogues : MonoBehaviour
 
 public class ListDialogues
 {
-    public List<Dialogues> listDialogues;
+    public List<DialoguesPNJ> listDialogues;
+
+    public string NextSentence(List<int> sentenceSaidByPlayer, List<int> sentenceAlreadySaid)
+    {
+        List<int> answerAvailable = new List<int>();
+        foreach (var dial in listDialogues)
+        {
+            foreach (int sentencePlayerID in sentenceSaidByPlayer)
+            {
+                
+            }
+        }
+
+        return "bou";
+    }
 }
 
 [Serializable]
-public class Dialogues
+public class DialoguesPNJ
 {
     //Phrase du dialogue
     public string sentence;
@@ -112,5 +125,6 @@ public class Dialogues
     public int idSentence;
     
     //Bool pour savoir si la phrase est bloqué ou pas
-    public bool available;
+    public List<int> canSayif;
+
 }

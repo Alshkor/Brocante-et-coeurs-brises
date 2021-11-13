@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Carac : MonoBehaviour
 {
+    //On y stock tous les ID des phrases dites par le PNJ actuel
+    private List<int> _sentenceSaid;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        _sentenceSaid = new List<int>();
     }
 
     // Update is called once per frame
@@ -27,8 +31,6 @@ public class PNJ
     
     //Son niveau de richesse
     private float richness;
-    
-
 
 }
 
