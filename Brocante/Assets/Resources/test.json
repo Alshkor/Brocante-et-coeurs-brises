@@ -1,0 +1,9 @@
+﻿{
+  "Random" : {
+    "name": "Pierre",
+    "richness": "70",
+    "goodLines": ["Cet article est exactement ce que je voulais !", "C'est un prix d'ami que vous me faites la.", "Je repasserais surement par votre stand."],
+    "badLines": ["C'est bien trop cher pour ce que c'est mais soit", "C'est presque du vol a se point la.", "Vous êtes dur en affaire."],
+    "neutralLines": ["Merci et à bientôt", "J'ai plus d'idée c'est terrible"]
+  }
+}

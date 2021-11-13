@@ -1,0 +1,21 @@
+﻿{ "listDialogues": 
+  [
+    {
+      "sentence": "Bonjour souhaitez-vous de ce manifique pot ?1",
+      "idSentence": 1,
+      "available": true
+    },
+    {
+      "sentence": "Bonjour souhaitez-vous de ce manifique pot ?2",
+      "idSentence": 2,
+      "canSayif": [2,4,5],
+      "available": true
+    },
+    {
+      "sentence": "Bonjour souhaitez-vous de ce manifique pot ?3",
+      "idSentence": 3,
+      "idAction": 1,
+      "available": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+    "ListDialogues": [
+        {
+            "sentence": "Ah parfait vous êtes ouvert ce n'est pas trop tôt!",
+            "idSentence" : 1
+        },
+        {
+            "sentence": "Bonjour, puis-je vous aider ?",
+            "idSentence": 2,
+            "available": true
+        },
+        {
+            "sentence": "J’ai peu de temps devant moi, vous comprenez j’ai tant de choses à faire.",
+            "idSentence": 3
+        },
+        {
+            "sentence": "C’est normal pour une femme de ma prestance après tout n’est-ce pas ?",
+            "idSentence": 4
+        },
+        {
+            "sentence": "...",
+            "idSentence": 5,
+            "available": true
+        },
+        {
+            "sentence": "Hum oui j'imagine",
+            "idSentence": 6,
+            "available": true
+        },
+        {
+            "sentence": "Vous êtes du genre calme vous. Vous pourriez être domestique.",
+            "idSentence": 7,
+            "canSayIf": [ 5 ]
+        },
+        {
+            "sentence": "Evidemment puisque je vous le dis !",
+            "idSentence": 8,
+            "canSayIf": [ 6 ]
+        },
+        {
+            "sentence": "Bon revenons en au fait, je veux un vase j’espère que vous en avez.",
+            "idSentence": 9
+        },
+        {
+            "sentence": "Mais il est cassé, c’est inadmissible ! Donnez m’en un autre !",
+            "idSentence": 10,
+            "canSayIf": [ 100 ]
+        },
+        {
+            "sentence": "Non je veux un vase. Vous n'écoutez donc rien.",
+            "idSentence": 11,
+            "canSayIf": [102]
+        },
+        {
+            "sentence": "Oui ça devrait faire l’affaire",
+            "idSentence": 12,
+            "canSayIf": [ 101 ]
+        },
+        {
+            "sentence": "Ce n’est pas si horrible ici on dirait. Je reviendrai peut-être. Au revoir.",
+            "idSentence": 13,
+            "canSayif": [ 12 ]
+        }
+    ]
+}
