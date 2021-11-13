@@ -46,6 +46,10 @@ public class IsItemSelect : MonoBehaviour
         }
 
         return -1;
+    }
 
+    public static GameObject GetItemSelect()
+    {
+        return itemSelect;
     }
 }

@@ -13,3 +13,8 @@ public class InitObservableObject : MonoBehaviour
         GameObject.Instantiate(initGameObject, objectPosition, Camera.main.transform.rotation);
     }
 }
+
+public class StaticObject
+{
+    public static GameObject activeObject;
+}
