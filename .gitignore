@@ -59,6 +59,3 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Unity config files are not needed
-Brocante/Library/
-/Brocante/Library/
-/Library/
