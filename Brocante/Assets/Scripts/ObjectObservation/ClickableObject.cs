@@ -7,6 +7,7 @@ public class ClickableObject : MonoBehaviour
     private Animator anim;
     private AudioSource audioData;
     private bool isActiveAudio = true;
+    public Camera _camera;
 
     // Update is called once per frame
     void Update()
@@ -14,7 +15,7 @@ public class ClickableObject : MonoBehaviour
         /*On utilise le Raycast pour regarder sur quel collider on clique*/
         if (Input.GetMouseButtonDown(0)){
             RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
 
             if (Physics.Raycast(ray, out hit)) {
 

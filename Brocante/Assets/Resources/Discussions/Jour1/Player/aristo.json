@@ -1,0 +1,22 @@
+{
+    "ListDIalogues": [
+        {
+            "sentence": "Bonjour, puis-je vous aider ?",
+            "idSentence": 2,
+            "canSayIf": [ 1 ],
+            "available": true
+        },
+        {
+            "sentence": "...",
+            "idSentence": 5,
+            "canSayIf": [ 4 ],
+            "available": true
+        },
+        {
+            "sentence": "Hum oui j'imagine",
+            "idSentence": 6,
+            "canSayIf": [4],
+            "available": true
+        }
+    ]
+}

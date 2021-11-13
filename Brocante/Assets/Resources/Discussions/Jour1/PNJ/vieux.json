@@ -1,0 +1,78 @@
+{
+    "listDialogues": [
+        {
+            "sentence": "Hum excusez-moi, il y a quelqu’un ? Oh vous êtes là !",
+            "idSentence": 1
+        },
+        {
+            "sentence": "Vous venez d’arriver n’est-ce-pas, vous avez l’air d’être de la ville vous ?",
+            "idSentence": 2
+        },
+        {
+            "sentence": "Y a pas à dire c’est rare que des citadins viennent dans un endroit perdu comme ça.",
+            "idSentence": 3
+        },
+        {
+            "sentence": "Oh je vois, je ne vais pas vous embêter avec ça alors c’est vos histoires après tout.",
+            "idSentence": 6,
+            "canSayIf": [ 4 ]
+        },
+        {
+            "sentence": "Ah ça ! Vous aimerez beaucoup ce village alors !",
+            "idSentence": 7,
+            "canSayIf": [ 5 ]
+        },
+        {
+            "sentence": "Eh bien bienvenue! J'espère que votre commerce marchera.",
+            "idSentence": 8
+        },
+        {
+            "sentence": "C’est pas toujours facile croyez-moi je m’y connais un peu",
+            "idSentence": 9
+        },
+        {
+            "sentence": "Oh je tenais moi-même un magasin il y a fort longtemps",
+            "idSentence": 13,
+            "canSayIf": [12]
+        },
+        {
+            "sentence": "Il marchait plutôt bien vous savez, je l’avais repris de mon père.",
+            "idSentence": 14,
+            "canSayIf": [ 13 ]
+        },
+        {
+            "sentence": "Vous vous levez tôt vous aussi ? J’arrivais chaque jour à 8h10 je m’en rappelle pour tout préparer.",
+            "idSentence": 15,
+            "canSayIf": [ 14 ]
+        },
+        {
+            "sentence": "Enfin ça appartient au passé maintenant !",
+            "idSentence": 16,
+            "canSayIf": [ 15 ]
+        },
+        {
+            "sentence": "Voyez-vous je m’ennuie un peu ces derniers temps, auriez-vous un livre à vendre?",
+            "idSentence": 17
+        },
+        {
+            "sentence": "Mais non mon petit, un livre pas un vase",
+            "idSentence": 18,
+            "canSayIf": [ 100, 101 ]
+        },
+        {
+            "sentence": "Oh mais c’est une dédicace, quelle chance ! Ça doit augmenter sa valeur !",
+            "idSentence": 19,
+            "canSayIf": [ 103 ]
+        },
+        {
+            "sentence": "Je le prends merci!",
+            "idSentence": 20,
+            "canSayIf": [ 102, 19 ]
+        },
+        {
+            "sentence": "Je repasserai probablement dans les prochains jours. Portez vous bien mon petit !",
+            "idSentence": 21
+        }
+    ]
+
+}

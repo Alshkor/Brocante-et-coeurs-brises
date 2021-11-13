@@ -1,0 +1,35 @@
+{
+    "listDialogues": 
+    [
+        {
+            "sentence": "C’est une longue histoire.",
+            "idSentence": 4,
+            "canSayIf": [ 3 ],
+            "available": true
+        },
+        {
+            "sentence": "J’ai toujours voulu vivre en campagne",
+            "idSentence": 5,
+            "canSayIf": [ 3 ],
+            "available": true
+        },
+        {
+            "sentence": "Merci ! Vous cherchez quelque chose ?",
+            "idSentence": 10,
+            "canSayIf": [ 9 ],
+            "available": true
+        },
+        {
+            "sentence": "Si vous le dites. Quelque chose vous intéresse ?",
+            "idSentence": 11,
+            "canSayIf": [ 9 ],
+            "available": true
+        },
+        {
+            "sentence": "Comment ça ?",
+            "idSentence": 12,
+            "canSayIf": [ 9 ],
+            "available": true
+        }
+    ]
+}
