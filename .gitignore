@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-Brocante/[Ll]ibrary/
+/Brocante/[Ll]ibrary/
 /Brocante/[Tt]emp/
 /Brocante/[Oo]bj/
 /Brocante/[Bb]uild/
